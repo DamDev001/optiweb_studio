@@ -32,7 +32,9 @@
 <!-- HEADER SECTION -->
 <header id="header">
     <nav>
-        <a href="#hero-section" class="logo">OptiWeb studio</a>
+        <div class="logoContainer">
+            <a href="#hero-section" class="logo">OptiWeb studio</a>
+        </div>
 
         <ul class="nav-list">
             <li><a href="#hero-section" class="active">ABOUT US</a></li>
@@ -57,6 +59,13 @@
                 <h1 class="hero-text">Digitize ideas</h1>
             </div>
 
+            <div class="mobile">
+                <div class="hero-text">
+                    <p>We’re passionate in creating custom websites and applications for businesses mostly for web3. Our
+                        team of experienced developers</p>
+                </div>
+            </div>
+
             <div class="right">
                 <div class="sinny-image">
                     <img src="./asset/image/heroImage.png" alt="">
@@ -79,10 +88,12 @@
             <img src="./asset/image/Mask group.png" alt="">
         </div>
 
-        <div class="slider">
-            <div class="col-1">DISCUSS YOUR IDEA</div>
-            <div class="col-2">DISCUSS YOUR IDEA</div>
-            <div class="col-3">DISCUSS YOUR IDEA</div>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="col-1">DISCUSS YOUR IDEA</div>
+                <div class="col-2">DISCUSS YOUR IDEA</div>
+                <div class="col-3">DISCUSS YOUR IDEA</div>
+            </div>  
         </div>
     </section>
 
@@ -97,7 +108,7 @@
                 <div class="right">
                     <div class="col-1"><img src="./asset/image/Vector (1).png"><span>Designs</span></div>
                     <div class="col-2"><img src="./asset/image/Vector (1).png"><span>Development</span></div>
-                    <div class="col-3"><img src="./asset/image/Vector (1).png"><span>Digital Marketing</span></div>
+                    <div class="col-3"><img src="./asset/image/Vector (1).png"><span>Marketing</span></div>
                     <div class="col-4"><img src="./asset/image/Vector (1).png"><span>SEO</span></div>
                 </div>
             </div>
@@ -116,6 +127,7 @@
 
                         </div>
                     </div>
+                    <div class="service-image"></div>
                 </a>
 
                 <a href="#">
@@ -131,6 +143,7 @@
 
                         </div>
                     </div>
+                    <div class="service-image"></div>
                 </a>
 
                 <a href="#">
@@ -146,6 +159,8 @@
 
                         </div>
                     </div>
+
+                    <div class="service-image"></div>
                 </a>
 
                 <a href="#">
@@ -161,6 +176,8 @@
 
                         </div>
                     </div>
+
+                    <div class="service-image"></div>
                 </a>
 
                 <a href="#">
@@ -176,16 +193,17 @@
 
                         </div>
                     </div>
+                    <div class="service-image"></div>
                 </a>
             </div>
 
-            <div class="fact">
+            <!-- <div class="fact">
                 <div class="fact-text">
-                    A resourcesful mind<div class="image"></div>possesses the wisdom <span class="imageTwo"></span>to
+                    A resourcesful mind<span class="image"></span>possesses the wisdom <span class="image"></span>to
                     align actions <span class="small-arrow"></span>with optimal moments <span
-                        class="imageThree"></span>and ideal settings.
+                        class="image"></span>and ideal settings.
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -199,7 +217,7 @@
             <div class="center">
                 <div class="col-1"><img src="./asset/image/Vector (1).png"><span>Designs</span></div>
                 <div class="col-2"><img src="./asset/image/Vector (1).png"><span>Development</span></div>
-                <div class="col-3"><img src="./asset/image/Vector (1).png"><span>Digital Marketing</span></div>
+                <div class="col-3"><img src="./asset/image/Vector (1).png"><span>Marketing</span></div>
                 <div class="col-4"><img src="./asset/image/Vector (1).png"><span>SEO</span></div>
             </div>
 
@@ -256,12 +274,18 @@
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CSSRulePlugin.min.js"
-    integrity="sha512-+35N1KBHwTDnFOBSqO2nm/qsf5okaS74sUZu/rT/wlvuAfJ1hrAoGlWZip2l1LHB1q2i8B2k84Pb/NrC38bv8Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"
+        integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"
+        integrity="sha512-5ZqpMmz0hz6IocEQqdQ3sns2rJ+8ODVbZflfapvz26ZaP3nZrEjnNrpOaEW97bQYIg0XbkjFdZUun701YjOr5Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+        integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/CSSRulePlugin.min.js"
+        integrity="sha512-9BAIrJcd9W75AJsWgJTfaoRkdbk2EI92JkWWsnRx6+T8NfqrIFNrb22stBpB4ii+cbgbUG24d5BPyl4JMAw5aw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="./asset/js/main.js"></script>
 
 <body>
