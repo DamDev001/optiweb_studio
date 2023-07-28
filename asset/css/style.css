@@ -21,6 +21,7 @@
 
 body {
   background: var(--bg-color);
+  overflow-x: hidden;
 }
 
 header {
@@ -85,6 +86,7 @@ header nav .menu-link {
 
 main {
   margin-top: 5rem;
+  overflow: hidden;
 }
 main #hero-section .container {
   padding: 22px 5%;
@@ -177,17 +179,30 @@ main #hero-section .hero-showcase-image img {
   width: 100%;
   margin-top: 2rem;
 }
-main #hero-section .slider-container .slider {
+main #hero-section .slider-container {
   background: black;
-  color: var(--text-color-white);
+  position: absolute;
+  color: white;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 22px 5%;
+  animation: sliding 40s linear infinite;
 }
-main #hero-section .slider-container .slider .col-1,
-main #hero-section .slider-container .slider .col-2,
-main #hero-section .slider-container .slider .col-3 {
+main #hero-section .slider-container .word {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+main #hero-section .slider-container .word .col-1,
+main #hero-section .slider-container .word .col-2,
+main #hero-section .slider-container .word .col-3 {
+  margin-left: 10px;
+  width: 100%;
+  display: flex;
+}
+main #hero-section .slider-container .word .col-1 span,
+main #hero-section .slider-container .word .col-2 span,
+main #hero-section .slider-container .word .col-3 span {
+  margin-left: 2px;
   font-family: var(--anton-family);
   font-size: 45.231px;
   font-style: normal;
@@ -201,7 +216,7 @@ main #hero-section .slider-container .slider .col-3 {
 main #services {
   padding: 5% 5%;
   background: var(--second-bg-color);
-  z-index: 99;
+  margin-top: 3rem;
 }
 main #services .container .top {
   display: flex;
@@ -468,6 +483,9 @@ main #contact .container .btns a:nth-child(2):hover {
   font-size: 18px;
   border: 0;
 }
+main #contact-small {
+  display: none;
+}
 
 footer {
   padding: 2% 5%;
@@ -643,12 +661,38 @@ footer .container .bottom span {
   }
 }
 @media (max-width: 768px) {
+  main #services {
+    margin-top: 4rem;
+  }
   main #contact {
     padding: 5% 3%;
   }
   main #contact .container h1 {
     font-size: 50px;
     line-height: 70px;
+  }
+}
+@media (max-width: 750px) {
+  main #contact {
+    padding: 5% 3%;
+    border-radius: unset;
+    display: none;
+  }
+  main #contact .container h1 {
+    font-size: 50px;
+    line-height: 70px;
+  }
+  main #contact-small {
+    display: block;
+  }
+  footer .container .top {
+    text-align: left;
+  }
+  footer .container .bottom {
+    margin-top: 3rem;
+  }
+  footer .container .bottom span:nth-child(1), footer .container .bottom span:nth-child(3) {
+    display: none;
   }
 }
 @media (max-width: 550px) {
@@ -752,6 +796,14 @@ footer .container .bottom span {
   main #hero-section .bottom-contanier .col-2 img {
     width: 15%;
     margin-right: 10px;
+  }
+}
+@keyframes sliding {
+  0% {
+    transform: translate(0%);
+  }
+  100% {
+    transform: translate(-100%);
   }
 }
 /**
