@@ -684,6 +684,49 @@ footer .container .bottom span {
   }
   main #contact-small {
     display: block;
+    background: var(--bg-color);
+    padding: 1rem;
+  }
+  main #contact-small .container h1 {
+    font-size: 40px;
+    line-height: 70px;
+    font-family: var(--montserrat-family);
+    background: var(--bg-color);
+    font-weight: 900;
+    color: var(--second-bg-color);
+  }
+  main #contact-small .container .btns a {
+    padding: 10px 30px;
+    color: var(--bg-color);
+    font-family: var(--montserrat-family);
+    border-radius: 30px;
+    transition: 0.5s ease;
+    background: #D9D9D9;
+    font-size: 18px;
+    border: 0;
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 18px;
+  }
+  main #contact-small .container .btns a:nth-child(2) {
+    border: 1px solid #D9D9D9;
+    color: #D9D9D9;
+    background: transparent;
+  }
+  main #contact-small .container .btns a:nth-child(2):hover {
+    padding: 20px 30px;
+    color: var(--bg-color);
+    font-family: var(--montserrat-family);
+    margin-left: 10px;
+    border-radius: 30px;
+    transition: 0.5s ease;
+    background: #D9D9D9;
+    font-size: 18px;
+    border: 0;
+  }
+  footer {
+    background: var(--second-bg-color);
   }
   footer .container .top {
     text-align: left;
